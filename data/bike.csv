@@ -1,0 +1,2 @@
+bike_ride_number,ride_date,distance_mi,max_elevation_ft,elevation_gain_ft,elapsed_time_minutes,total_calories,avg_heart_rate_bpm,temperature_f,destination,comments
+1,4/20/2021,10.23,502,532,71,473,121,71,Preston,Fatigued
