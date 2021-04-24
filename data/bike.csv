@@ -1,4 +1,4 @@
 bike_ride_number,ride_date,bike,distance_mi,max_elevation_ft,elevation_gain_ft,elapsed_time_minutes,avg_speed_mph,total_calories,avg_heart_rate_bpm,temperature_f,destination,comments
-1,4/20/2021,Surly Midnight Special,10.23,502,532,71,8.65,473,121,71,Preston,Fatigued
-2,4/22/2021,Surly Midnight Special,4.24,1075,816,42,6.36,340,141,60,Squak,
+1,04/20/2021,Surly Midnight Special,10.23,502,532,71,8.65,473,121,71,Preston,Fatigued
+2,04/22/2021,Surly Midnight Special,4.24,1075,816,42,6.36,340,141,60,Squak,
 
