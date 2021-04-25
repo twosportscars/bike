@@ -1,4 +1,6 @@
 bike_ride_number,ride_date,bike,distance_mi,max_elevation_ft,elevation_gain_ft,elapsed_time_minutes,avg_speed_mph,total_calories,avg_heart_rate_bpm,temperature_f,destination,comments
 1,04/20/2021,Surly Midnight Special,10.23,502,532,71,8.65,473,121,71,Preston,Fatigued
 2,04/22/2021,Surly Midnight Special,4.24,1075,816,42,6.36,340,141,60,Squak,
-
+3,04/24/2021,Trek 400,25.0,600,1000,200,7.5,800,120,80,Squak,
+4,04/24/2021,Trek 930,10.0,500,600,60,10.0,500,120,71,Squak,Fell off!
+5,04/25/2021,Trek Verve,12.0,600,800,75,9.6,500,72,72,Bellevue,Ride to PSE

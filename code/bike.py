@@ -1,4 +1,3 @@
-from datetime import datetime
 import pandas as pd
 
 class Bike():
@@ -19,16 +18,15 @@ class Bike():
         try:
     
             # read the input file into a dataframe
-            df = pd.read_csv(file_path, index_col='bike_ride_number')
+            self.df = pd.read_csv(file_path, index_col='bike_ride_number')
     
         except FileNotFoundError:
             print("File " + file_path + " not found. Please check spelling. Names are case sensitive.\n")
     
         else:
-            print(df)
-            print(df.info())
-            self.num_rows = df.shape[0]
-            # print(self.num_rows)
+            print(self.df)
+            # print(self.df.info())
+            self.num_rows = self.df.shape[0]
             
     def list_bikes(self):
         """Lists out the available bikes and their position in the list."""
@@ -82,20 +80,20 @@ class Bike():
         print()
         response = input('Are these correct (y/n): ')
         if response == 'y':
-            print('Getting ready to append file')
+            print('\nGetting ready to append file, here is the new dataset: \n')
+            self.df.loc[str(self.num_rows)] = [self.bike_ride_date, self.bike_model, self.distance_mi, self.max_elevation_ft, self.elevation_gain_ft, self.elapsed_time_minutes,self.avg_speed_mph,
+            self.total_calories, self.avg_heart_rate_bpm, self.temperature_f, self.destination, self.comments]
+            print(self.df)
+            
+            
+            #write the data frame back out
+            self.df.to_csv(self.file_path,index=True)
+            print('\nProgram Ended, re-run to add another ride.')
+            
         else:
-            print('Aborting')
-            
-            
-        
-        
-        
-        
-        
-        
-
+            print('\nAborting -- re-run to start over for this ride.')
+         
+ 
 
 #Main Program
-myride = Bike()
-myride.append_ride()
-#myride.list_bikes()
+Bike().append_ride()
